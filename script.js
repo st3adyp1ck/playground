@@ -41,3 +41,17 @@ console.log(filterAndDouble([3, 7, 12, 5, 20]));
 console.log(filterAndDouble([2, 4, 5]));
 
 */
+
+function processSentence(string) {
+  const wordArray = string.split(" ");
+  const filteredAndReversedArray = wordArray
+    .filter((word) => word.length >= 3) // Filter words that are 3 or more characters
+    .map((word) => word.split("").reverse().join("")); // Reverse each filtered word
+
+  const reverseString = filteredAndReversedArray.join(" ");
+  return reverseString;
+}
+
+console.log(processSentence("Javascript is fun and Challenging"));
+console.log(processSentence("Hello World"));
+console.log(processSentence("I am a coder!"));
