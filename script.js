@@ -42,6 +42,8 @@ console.log(filterAndDouble([2, 4, 5]));
 
 */
 
+/*
+====== FULL SOLUTION ======
 function processSentence(string) {
   const wordArray = string.split(" ");
   const filteredAndReversedArray = wordArray
@@ -52,6 +54,17 @@ function processSentence(string) {
   return reverseString;
 }
 
+====== REFACTORED SOLUTION ======
+function processSentence(string) {
+  return string
+    .split(" ") // Split the sentence into words
+    .filter((word) => word.length >= 3) // Filter words that are 3 or more characters long
+    .map((word) => [...word].reverse().join("")) // Reverse each filtered word
+    .join(" "); // Join the words back into a single string
+}
+
 console.log(processSentence("Javascript is fun and Challenging"));
 console.log(processSentence("Hello World"));
 console.log(processSentence("I am a coder!"));
+
+*/
