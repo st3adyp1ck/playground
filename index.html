@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>😈 St3adyP1ck</title>
+    <title>St3adyP1ck</title>
     <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to favicon-->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
     <!-- Header Section -->
     <header>
@@ -32,17 +35,22 @@
     <!-- Main Content Section -->
     <main>
       <section id="intro">
-        <h2>Introduction</h2>
-        <p>This section contains an introduction to the page content.</p>
-      </section>
+        <h2>Welcome to SteadyP1ck's JavaScript Playground!</h2>
+        <p>
+          This is where I dive into the world of JavaScript, exploring coding challenges,
+          experimenting with new concepts, and sharpening my skills one function at a
+          time. Whether it's solving algorithmic puzzles or crafting unique identifiers,
+          this playground is my space to learn, grow, and share my journey as I work
+          toward mastering JavaScript. Feel free to browse through the challenges and see
+          what I've been working on. Each link below will take you to a specific challenge
+          or experiment, showcasing my approach to problem-solving and coding in
+          JavaScript.
+        </p>
 
-      <section id="features">
-        <h2>Features</h2>
-        <ul id="features-list">
-          <li class="feature-item">Feature 1</li>
-          <li class="feature-item">Feature 2</li>
-          <li class="feature-item">Feature 3</li>
-        </ul>
+        <p>
+          All functions and challenges use this page as a running environment, un-comment
+          each function/challenge in its respective JS file.
+        </p>
       </section>
     </main>
 
@@ -51,10 +59,11 @@
       <p id="footer-text">© 2024 NorthStar Software Development. All rights reserved.</p>
     </footer>
 
-    <!-- Link to an external JavaScript file (optional) -->
+    <!-- Link to main JavaScript file -->
     <script src="script.js"></script>
-    <script src="/js/calc_challenge.js"></script>
-    <script src="/js/array_string_challenges.js"></script>
-    <script src="/js/generate_uid.js"></script>
+    <!-- Links to project JavaScript files-->
+    <script src="js/calc_challenge.js" id="calcScript" defer></script>
+    <script src="js/array_string_challenges.js" id="arrayStringScript" defer></script>
+    <script src="js/generate_uid.js" id="uidScript" defer></script>
   </body>
 </html>
