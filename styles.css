@@ -1,7 +1,8 @@
 /* General Styles */
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   background-image: linear-gradient(
@@ -14,7 +15,7 @@ body {
     #2b991d
   );
 
-  color: #333;
+  color: #050505;
 }
 
 /* Header Section */
@@ -46,7 +47,8 @@ header {
 img {
   margin-right: 0px;
   padding: 0px;
-  max-width: 30%;
+  max-width: 250px;
+  height: auto;
 }
 
 #main-heading {
@@ -94,9 +96,16 @@ main {
 }
 
 h2 {
-  color: #0073e6;
+  color: #92c8ff;
   border-bottom: 2px solid #0073e6;
   padding-bottom: 10px;
+}
+
+main p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: rgb(132, 25, 25);
+  font-weight: bold;
 }
 
 #features-list {
